@@ -29,9 +29,9 @@
 
 ; exercise 1.8
 (define (cbrt-iter guess x)
-  (define (good-enough?) (< (abs (- (cube guess) x)) 0.0001))
+  (define (good-enough? guess) (< (abs (- (cube guess) x)) 0.0001))
   (define (improve guess x) (/ (+ (/ x (square guess)) (* 2.0 guess)) 3.0))
-  (if (good-enough? guess x)
+  (if (good-enough? guess)
     guess
     (cbrt-iter (improve guess x) x)))
 
