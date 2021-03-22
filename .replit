@@ -1,2 +1,2 @@
-language="scheme"
+language="bash"
 run="guile -s main.scm"
