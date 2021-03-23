@@ -1,13 +1,7 @@
 (load "sicp.scm")
-(load "chapter2.scm")
+(load "chapter3.scm")
 
-; (display (deriv '(* x y (+ x 3)) 'x))
-; (newline)
-
-(display (make-sum 'a 'b 'c))
+(display (+ (f 0) (f 1)))
 (newline)
-(display (addend (make-sum 'a 'b 'c)))
+(display (+ (f 1) (f 0)))
 (newline)
-(display (augend (make-sum 'a 'b 'c)))
-(newline)
-
